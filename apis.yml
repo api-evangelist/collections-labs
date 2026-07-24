@@ -1,4 +1,16 @@
 aid: collections-labs
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/collections-labs.png
 name: Collections Labs
 description: Collections Labs is a company surfaced as a portfolio company of a16z and added to the API
   Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
@@ -11,7 +23,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 apis: []
@@ -20,3 +32,20 @@ maintainers:
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  notes: 'Company could not be identified. a16z''s investment list (https://a16z.com/investment-list/)
+    carries the bare string "Collections Labs" with no hyperlink, sector, or website.
+    No matching provider in the APIs.io catalog. Candidate domains probed: collectionslabs.com
+    (resolves, 302 to hugedomains.com parking/for-sale), getcollections.com (self-signed
+    cert, unrelated), collections-labs.com / collectionslabs.ai / collectionslabs.io
+    / collectionslabs.dev / collectionslabs.co / collectionslabs.app / trycollections.com
+    / trycollections.ai / withcollections.com / collections.dev (all NXDOMAIN). github.com/collections-labs
+    404; github.com/collectionslabs 200 but is a dormant Objective-C mirror org with
+    no bio, website, or evidence of a16z affiliation - deliberately NOT wired in to
+    avoid misattribution. No website, no baseURL, and no API surface, so no host was
+    available to probe for well-known/, security/, or domain-security artifacts and
+    no spec exists to derive from. Re-queue when a website is discovered.'
